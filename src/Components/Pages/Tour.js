@@ -4,7 +4,7 @@ import Card from '../Cd'
 const Hollywood = () => {
     const[data,setData]=useState([])
     useEffect(()=>{
-        const url = "http://localhost:4001/api/holly";
+        const url = "https://back-122.herokuapp.com/api/holly";
         fetch(url).then(res => res.json())
             .then(res => setData(res)  )
     },[])

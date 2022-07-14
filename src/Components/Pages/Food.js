@@ -5,7 +5,7 @@ import Card from '../Cd'
 const Food = () => {
     const[data,setData]=useState([])
   useEffect(()=>{
-      const url = "http://localhost:4001/api/food";
+      const url = "https://back-122.herokuapp.com/api/food";
       fetch(url).then(res => res.json())
           .then(res => setData(res)  )
   },[])
